@@ -1,0 +1,4 @@
+This is the output folder of the compilation process. All compiled themes will have their own folders at the end of the process.
+
+Also, files starting with 'dnr.' will not be removed by the compiler.
+You can create as many as you like, but we do not recommend using them, to avoid clutter.

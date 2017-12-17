@@ -1,0 +1,147 @@
+# List of themes and their properties
+
+# The parser will read this file as this:
+# 'THEME NAME (spaces allowed)','PARENT THEME (can be empty)',NUMBER (0=no conditions, 18=gtk 3.18 and lower, 2=gtk 3.20 and higher)
+# NOTE: A theme with no parent will still inherit the classes from the template theme
+
+# Ex.
+# 'YOUR THEME','YOUR PARENT THEME',0
+
+# Use [COMMON_FAMILY] to organize themes around a common name. This will require that all themes in the group be stored in a sub-folder
+# named after the sub-group name in themes.
+
+# Ex.
+#
+# [WINDOWS]
+# 'Windows 10','',0
+# Will require having the Windows theme stored under 'themes/WINDOWS/Windows 10 Light'
+
+# To mark a theme as a standalone unit (no sub-folder under themes required), use the [UNIQUE] tag above the theme's definition
+
+# Ex.
+# [UNIQUE]
+# 'YOUR_THEME','',18
+# Will need your theme saved under 'themes/YOUR_THEME'
+
+# NOTE: To mark a theme as uncomplete or not ready for deployment, please use a triple # (doing so will issue a warning instead of a not found error)
+
+# Template theme; do not remove or comment this reference (you can change the template's name)
+[TEMPLATE]
+'B00merang Flat','',0
+
+#-------------------- WINDOWS --------------------
+[WINDOWS]
+# Windows 10
+'Windows 10 Light','',0
+'Windows 10 Dark','Windows 10 Light',0
+###'Windows 10 Universal Light','Windows 10 Light',0
+'Windows 10 Universal Dark','Windows 10 Light',0
+
+# Windows Server 2012
+###'Windows Server 2012','Windows 8.1',0
+
+# Windows 8.1
+'Windows 8.1','',0
+'Windows 8.1 Metro','Windows 10 Universal Light',0
+
+# Windows 7
+'Windows 7','',0
+'Windows 7 Media Center','',0
+
+# Windows Server 2008
+###'Windows Server 2008','Windows Vista Basic',0
+
+# Windows Vista
+'Windows Vista','Windows 7',0
+'Windows Vista Basic','Windows Vista',0
+
+# Windows Longhorn
+'Windows Longhorn Plex','',0
+'Windows Longhorn Slate','Windows XP Luna',0
+'Windows Longhorn Aero', 'Windows Vista', 0
+'Windows Longhorn Jade','Windows Vista',0
+
+# Windows Server 2003
+###'Windows Server 2003','Windows 9x',0
+
+# Windows XP
+'Windows XP Luna','',0
+'Windows XP Homestead','Windows XP Luna',0
+'Windows XP Metallic','Windows XP Luna',0
+'Windows XP Royale','Windows XP Luna',0
+'Windows XP Royale Dark','Windows XP Royale',0
+'Windows XP Embedded','Windows XP Royale',0
+'Windows XP Zune','Windows XP Embedded',0
+
+# Windows Whistler
+'Windows Whistler','Windows 8.1',0
+
+# Windows 95/98/2000/ME
+'Windows 9x','',0
+
+# Windows 3/3.1/3.11
+'Windows 3.x','Windows 9x',0
+
+#-------------------- MAC OS --------------------
+[MAC OS]
+# macOS 10.11 El Capitan/10.12 Sierra/10.13 High Sierra
+'macOS High Sierra','',0
+'macOS High Sierra Dark','macOS High Sierra',0
+
+# iOS 11
+'iOS 11','macOS High Sierra',0
+###'iOS 11 Dark','iOS 11',0
+
+# OS X 10.9 Mavericks
+'OS X Mavericks','macOS High Sierra',18
+
+# iOS 4
+###'iOS 4','OS X Mavericks',18
+
+# OS X 10.6 Leopard'
+'OS X Leopard','OS X Mavericks',18
+
+# Mac OS X Cheetah
+'Mac OS X Cheetah','macOS High Sierra',0
+
+#-------------------- GOOGLE --------------------
+[GOOGLE]
+# Chrome OS
+'Chrome OS','',0
+'Chrome OS Dark','Chrome OS',0
+
+# Android 8 Oreo
+'Android 8 Oreo','Chrome OS,0
+###'Android 8 Oreo Dark',''Chrome OS Dark',0
+
+# Fucshia
+'Fucshia','Android 8 Oreo',0
+'Fucshia Dark','Fucshia' 0
+
+#-------------------- SUN/ORACLE --------------------
+[SUN_ORACLE]
+# Solaris 11
+###'Solaris 11','',18
+
+# Solaris 10
+###'Solaris 10','',18
+
+#-------------------- CANONICAL --------------------
+[CANONICAL]
+# Unity 7
+###'Unity 7','',0
+
+# Unity 8
+'Unity 8','',0
+
+#-------------------- BE --------------------
+# [BEOS]
+# BeOS
+###'BeOS','',18
+
+#-------------------- B00MERANG --------------------
+[B00MERANG]
+'B00merang Glass','',0
+'B00merang Green', 'B00merang Glass',0
+'B00merang Dark', 'B00merang Glass',0
+###'B00merang Round','B00merang Glass',18	
